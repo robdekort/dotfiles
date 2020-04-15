@@ -31,12 +31,11 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
- "git"
  "mysql"
  "php"
  "node"
- "yarn"
  "mackup"
+ "mas"
 )
 
 for homebrew_package in "${homebrew_packages[@]}"; do
@@ -48,40 +47,45 @@ echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
   "1password"
-  "alfred"
-  "anydesk"
-  "authy"
-  "google-backup-and-sync"
-  "balenaetcher"
-  "chrome-remote-desktop-host"
+  "appcleaner"
   "discord"
+  "codekit"
   "firefox"
-  "flux"
-  "github"
   "google-chrome"
-  "insomnia"
+  "handbrake"
+  "iina"
   "iterm2"
-  "droplr"
-  "obs"
-  "opendnsupdater"
-  "phpstorm"
-  "propresenter"
-  "rocket"
+  "macmediakeyforwarder"
+  "microsoft-edge"
+  "opera"
+  "poedit"
+  "sequel-pro"
   "sketch"
-  "slack"
-  "spotify"
-  "sublime-text"
-  "tableplus"
   "telegram"
-  "tuple"
-  "typora"
-  "vlc"
-  "zoomus"
+  "transmit"
+  "toggl"
+  "tower"
+  "transmission"
+  "virtualbox"
 )
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
   brew cask install "$homebrew_cask_package"
 done
+
+# Install MAS apps
+mas install 1116599239 #NordVPN
+mas install 824171161 #Affinity Designer
+mas install 409183694 #Keynote
+mas install 1482454543 #Twitter
+mas install 1173932628 #Drop
+mas install 1254981365 #Contrast
+mas install 904280696 #Things
+mas install 1107421413 #1Blocker
+mas install 409201541 #Pages
+mas install 1449412482 #Reeder
+mas install 409203825 #Numbers
+mas install 1289583905 #Pixelmator Pro
 
 # Install Composer
 echo "Installing Composer"
@@ -90,7 +94,7 @@ mv composer.phar /usr/local/bin/composer
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet statamic/cli
+/usr/local/bin/composer global require laravel/installer laravel/valet statamic/cli
 
 # Install Laravel Valet
 echo "Installing Laravel Valet"
@@ -114,17 +118,7 @@ valet restart
 # Installing Global Node Dependecies
 echo "Installing Global Node Dependecies"
 npm install -g @vue/cli
-npm install -g @nuxt/cli
 npm install -g cross-env
-npm install -g heroku
-npm install -g netlify-cli
-
-# Generate SSH key
-echo "Generating SSH keys"
-ssh-keygen -t rsa
-
-echo "Copied SSH key to clipboard - You can now add it to Github"
-pbcopy < ~/.ssh/id_rsa.pub
 
 # Register the Global Gitignore file
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
