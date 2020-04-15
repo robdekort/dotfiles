@@ -67,6 +67,7 @@ homebrew_cask_packages=(
   "tower"
   "transmission"
   "virtualbox"
+  "visual-studio-code"
 )
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
