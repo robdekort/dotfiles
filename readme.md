@@ -22,7 +22,8 @@ Now that you've made sure you've done all the things, setup your mac!
 4. Run the `install.sh` script
 5. Login to all the things
 6. Restore settings for apps by running `mackup restore`
-7. Restart Mac to make sure everything works
+7. Restore SSH key from 1Password
+8. Restart Mac to make sure everything works
 
 ## Inspired by...
 This is forked and 100% inspired by the brilliant [Duncan](https://github.com/damcclean/dotfiles).
