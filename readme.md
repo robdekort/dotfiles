@@ -25,5 +25,5 @@ Now that you've made sure you've done all the things, setup your mac!
 7. Restore SSH key from 1Password
 8. Restart Mac to make sure everything works
 
-## Inspired by...
+## Credits and ❤️
 This is forked and 100% inspired by the brilliant [Duncan](https://github.com/damcclean/dotfiles).
