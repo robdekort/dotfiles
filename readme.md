@@ -19,8 +19,8 @@ Now that you've made sure you've done all the things, setup your mac!
 1. Update macOS to the latest version through the App Store
 2. Install the Xcode CLI-tools using `xcode-select --install`
 3. Clone this repository to `~/.dotfiles`
-4. Run `sh install`
-5. Run `./.macos`
+4. Run `sh install.sh` for all software
+5. Run `sh macos.sh` for sane MacOS defaults
 6. Login to all the things
 7. Restore settings for apps by running `mackup restore`
 8. Restore SSH key from 1Password
