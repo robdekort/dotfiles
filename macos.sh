@@ -284,7 +284,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items to 36 pixels
+# Set the icon size of Dock items to 60 pixels
 defaults write com.apple.dock tilesize -int 60
 
 # Change minimize/maximize window effect
@@ -308,7 +308,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 #defaults write com.apple.dock static-only -bool true
 
 # Don’t animate opening applications from the Dock
-defaults write com.apple.dock launchanim -bool false
+# defaults write com.apple.dock launchanim -bool false
 
 # Speed up Mission Control animations
 # defaults write com.apple.dock expose-animation-duration -float 0.1
