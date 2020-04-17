@@ -33,6 +33,7 @@ homebrew_packages=(
  "node"
  "mackup"
  "mas"
+ "wp-cli"
 )
 
 for homebrew_package in "${homebrew_packages[@]}"; do
