@@ -28,7 +28,7 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
- "mysql"
+ "mysql@5.7"
  "php"
  "node"
  "mackup"
