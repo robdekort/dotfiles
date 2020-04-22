@@ -32,6 +32,7 @@ homebrew_packages=(
  "php"
  "node"
  "mackup"
+ "mailhog"
  "mas"
  "wp-cli"
 )
