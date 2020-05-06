@@ -107,7 +107,7 @@ mkdir $HOME/Sites
 
 # Start MySQL for the first time
 echo "Starting MySQL for the first time"
-brew services start mysql
+brew services start mysql@5.7
 
 # Configure Laravel Valet
 cd ~/Sites
