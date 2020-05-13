@@ -28,7 +28,7 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
- "mysql@5.7"
+ "mysql"
  "php"
  "node"
  "mackup"
@@ -107,7 +107,7 @@ mkdir $HOME/Sites
 
 # Start MySQL for the first time
 echo "Starting MySQL for the first time"
-brew services start mysql@5.7
+brew services start mysql
 
 # Configure Laravel Valet
 cd ~/Sites
