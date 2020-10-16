@@ -20,3 +20,5 @@ ehthumbs.db
 Thumbs.db
 .idea/
 .vscode
+.nova/Configuration.json
+.nova
