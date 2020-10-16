@@ -1,12 +1,12 @@
 # Shortcuts
-alias p="php please"
+alias plz="php please"
 alias g="git"
 alias c="composer"
 alias ci="composer install"
 alias cr="composer require"
 alias n="npm"
+alias ni="npm install"
 alias cl="clear"
-alias st="composer create-project statamic/statamic $1 --prefer-dist --stability=dev"
 
 # Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
