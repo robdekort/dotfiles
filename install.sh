@@ -78,13 +78,12 @@ echo "Installing App Store apps"
 mas install 1116599239 #NordVPN
 mas install 824171161 #Affinity Designer
 mas install 409183694 #Keynote
-mas install 1482454543 #Twitter
 mas install 1173932628 #Drop
 mas install 1254981365 #Contrast
 mas install 904280696 #Things
 mas install 1107421413 #1Blocker
 mas install 409201541 #Pages
-mas install 1449412482 #Reeder
+mas install 1529448980 #Reeder
 mas install 409203825 #Numbers
 mas install 1289583905 #Pixelmator Pro
 
