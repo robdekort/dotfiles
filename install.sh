@@ -59,7 +59,7 @@ homebrew_cask_packages=(
   "microsoft-edge"
   "opera"
   "poedit"
-  "sequel-pro"
+  "sequel-ace"
   "telegram"
   "transmit"
   "toggl"
