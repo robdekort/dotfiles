@@ -25,4 +25,4 @@ alias clone="git clone"
 alias init="git init && git add . && git commit -m 'Initial commit'"
 
 # Other
-alias start='code . && git pull && npm run watch'
+alias start='git pull && composer update && php artisan cache:clear && code . && npm run watch'
