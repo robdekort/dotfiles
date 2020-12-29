@@ -60,6 +60,7 @@ homebrew_cask_packages=(
   "opera"
   "poedit"
   "sequel-ace"
+  "sketch",
   "telegram"
   "transmit"
   "toggl"
@@ -119,6 +120,7 @@ valet restart
 echo "Installing Global Node Dependecies"
 npm install -g @vue/cli
 npm install -g cross-env
+npm install -g npm-check-updates
 
 # Register the Global Gitignore file
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
