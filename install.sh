@@ -28,7 +28,9 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
+ "imagemagic"
  "mysql"
+ "pkg-config"
  "php"
  "node"
  "mackup"
@@ -60,7 +62,7 @@ homebrew_cask_packages=(
   "opera"
   "poedit"
   "sequel-ace"
-  "sketch",
+  "sketch"
   "telegram"
   "transmit"
   "toggl"
@@ -114,6 +116,7 @@ cd ~/Sites
 valet park && cd ~
 echo "Configuring Laravel Valet"
 cd ~
+pecl install imagick
 valet restart
 
 # Installing Global Node Dependecies
