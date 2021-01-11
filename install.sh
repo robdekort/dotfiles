@@ -28,12 +28,14 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
+ "imagemagick"
  "mysql"
  "php"
  "node"
  "mackup"
  "mailhog"
  "mas"
+ "pkg-config"
  "wp-cli"
 )
 
@@ -114,6 +116,7 @@ cd ~/Sites
 valet park && cd ~
 echo "Configuring Laravel Valet"
 cd ~
+pecl install imagick
 valet restart
 
 # Installing Global Node Dependecies
