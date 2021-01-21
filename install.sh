@@ -116,7 +116,6 @@ cd ~/Sites
 valet park && cd ~
 echo "Configuring Laravel Valet"
 cd ~
-pecl install imagick
 valet restart
 
 # Installing Global Node Dependecies
