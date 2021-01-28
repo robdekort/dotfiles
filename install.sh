@@ -97,7 +97,7 @@ mv composer.phar /usr/local/bin/composer
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
-/usr/local/bin/composer global require laravel/installer laravel/valet statamic/cli
+/usr/local/bin/composer global require laravel/installer laravel/valet statamic/cli schmidfelix/ploi-cli
 
 # Install Laravel Valet
 echo "Installing Laravel Valet"
