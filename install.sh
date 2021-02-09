@@ -78,6 +78,7 @@ done
 
 # Install MAS apps
 echo "Installing App Store apps"
+mas install 775737590 #IAWriter
 mas install 1116599239 #NordVPN
 mas install 824171161 #Affinity Designer
 mas install 409183694 #Keynote
