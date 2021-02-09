@@ -117,6 +117,7 @@ cd ~/Sites
 valet park && cd ~
 echo "Configuring Laravel Valet"
 cd ~
+valet proxy mailhog http://127.0.0.1:8025
 pecl install imagick
 valet restart
 
