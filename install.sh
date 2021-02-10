@@ -112,6 +112,10 @@ mkdir $HOME/Sites
 echo "Starting MySQL for the first time"
 brew services start mysql
 
+# Start Mailhog for the first time
+echo "Starting Mailhog for the first time"
+brew services start mailhog
+
 # Configure Laravel Valet
 cd ~/Sites
 valet park && cd ~
