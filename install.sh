@@ -47,6 +47,7 @@ done
 echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
+  "alfred"
   "1password"
   "appcleaner"
   "discord"
