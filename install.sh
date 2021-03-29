@@ -46,6 +46,9 @@ done
 # Install Casks
 echo "Installing Homebrew cask packages"
 
+# Add cask for PHP mon
+brew tap nicoverbruggen/homebrew-cask
+
 homebrew_cask_packages=(
   "alfred"
   "1password"
@@ -62,6 +65,7 @@ homebrew_cask_packages=(
   "microsoft-edge"
   "opera"
   "poedit"
+  "phpmon"
   "sequel-ace"
   "sketch"
   "telegram"
@@ -104,6 +108,7 @@ echo "Installing Global Composer Packages"
 # Install Laravel Valet
 echo "Installing Laravel Valet"
 $HOME/.composer/vendor/bin/valet install
+valet trust
 
 # Create Sites directory
 echo "Creating a Sites directory"
