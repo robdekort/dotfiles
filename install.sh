@@ -50,7 +50,6 @@ echo "Installing Homebrew cask packages"
 brew tap homebrew/homebrew-cask
 
 homebrew_cask_packages=(
-  "alfred"
   "1password"
   "appcleaner"
   "discord"
@@ -59,7 +58,6 @@ homebrew_cask_packages=(
   "firefox"
   "google-chrome"
   "handbrake"
-  "iina"
   "iterm2"
   "macmediakeyforwarder"
   "microsoft-edge"
@@ -73,7 +71,6 @@ homebrew_cask_packages=(
   "toggl"
   "tower"
   "transmission"
-  "virtualbox"
   "visual-studio-code"
 )
 
@@ -95,6 +92,7 @@ mas install 409201541 #Pages
 mas install 1529448980 #Reeder
 mas install 409203825 #Numbers
 mas install 1289583905 #Pixelmator Pro
+mas install 1136220934 #Infuse
 
 # Install Composer
 echo "Installing Composer"
