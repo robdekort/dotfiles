@@ -10,8 +10,8 @@ echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Configure symlinks
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 
 # Homebrew - Installation
 echo "Installing Homebrew"
@@ -47,7 +47,7 @@ done
 echo "Installing Homebrew cask packages"
 
 # Add cask for PHP mon
-brew tap nicoverbruggen/homebrew-cask
+brew tap homebrew/homebrew-cask
 
 homebrew_cask_packages=(
   "alfred"
@@ -78,7 +78,7 @@ homebrew_cask_packages=(
 )
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
-  brew cask install "$homebrew_cask_package"
+  brew install "$homebrew_cask_package"
 done
 
 # Install MAS apps
@@ -103,7 +103,7 @@ mv composer.phar /usr/local/bin/composer
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
-/usr/local/bin/composer global require laravel/installer laravel/valet statamic/cli schmidfelix/ploi-cli
+/usr/local/bin/composer global require laravel/valet statamic/cli schmidfelix/ploi-cli
 
 # Install Laravel Valet
 echo "Installing Laravel Valet"
@@ -133,7 +133,6 @@ valet restart
 
 # Installing Global Node Dependecies
 echo "Installing Global Node Dependecies"
-npm install -g @vue/cli
 npm install -g cross-env
 npm install -g npm-check-updates
 
