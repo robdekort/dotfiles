@@ -55,6 +55,7 @@ homebrew_cask_packages=(
   "discord"
   "codekit"
   "figma"
+  "font-fira-code"
   "firefox"
   "google-chrome"
   "handbrake"
