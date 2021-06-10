@@ -129,6 +129,7 @@ echo "Configuring Laravel Valet"
 cd ~
 valet proxy mailhog http://127.0.0.1:8025
 pecl install imagick
+pecl install redis
 valet restart
 
 # Installing Global Node Dependecies
