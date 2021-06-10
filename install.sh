@@ -65,6 +65,7 @@ homebrew_cask_packages=(
   "opera"
   "poedit"
   "phpmon"
+  "redis"
   "sequel-ace"
   "sketch"
   "telegram"
