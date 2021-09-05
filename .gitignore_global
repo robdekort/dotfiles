@@ -23,3 +23,7 @@ Thumbs.db
 .nova/Configuration.json
 .nova
 ploi.yml
+
+docs/node_modules
+docs/docs/.vuepress/.cache/
+docs/docs/.vuepress/.temp/
