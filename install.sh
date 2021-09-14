@@ -66,6 +66,7 @@ homebrew_cask_packages=(
   "poedit"
   "phpmon"
   "redis"
+  "screenflow"
   "sequel-ace"
   "sketch"
   "telegram"
