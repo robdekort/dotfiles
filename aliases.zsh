@@ -19,10 +19,12 @@ alias push="git push"
 alias pull="git pull"
 alias commit="git commit -m"
 alias check="git checkout"
+alias switch="git switch"
 alias branch="git branch"
 alias reset="git reset"
 alias clone="git clone"
 alias init="git init && git add . && git commit -m 'Initial commit'"
+alias discard="git clean -df && git reset --hard"
 
 # Other
 alias start='git pull && php artisan cache:clear && code . && npm run watch'
