@@ -27,4 +27,4 @@ alias init="git init && git add . && git commit -m 'Initial commit'"
 alias discard="git clean -df && git reset --hard"
 
 # Other
-alias start='git pull && php artisan cache:clear && code . && npm run watch'
+alias start='code . && git pull && php artisan cache:clear && npm run watch'
