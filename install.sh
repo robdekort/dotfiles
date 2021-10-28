@@ -29,6 +29,7 @@ echo "Installing Homebrew packages"
 
 homebrew_packages=(
  "imagemagick"
+ "gh"
  "mysql"
  "php"
  "node"
@@ -68,6 +69,7 @@ homebrew_cask_packages=(
   "redis"
   "screenflow"
   "sequel-ace"
+  "signal"
   "sketch"
   "telegram"
   "transmit"
