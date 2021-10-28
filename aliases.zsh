@@ -28,3 +28,4 @@ alias discard="git clean -df && git reset --hard"
 
 # Other
 alias start='code . && git pull && php artisan cache:clear && npm run watch'
+alias fstart='code . && git pull && composer install && npm i && php artisan cache:clear && npm run watch'
