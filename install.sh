@@ -11,7 +11,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Configure symlinks
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
+rm ~/.ssh/config
+ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
+rm ~/.gitconfig
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Homebrew - Installation
 echo "Installing Homebrew"
@@ -33,7 +36,6 @@ homebrew_packages=(
  "mysql"
  "php"
  "node"
- "mackup"
  "mailhog"
  "mas"
  "pkg-config"
@@ -103,6 +105,10 @@ mas install 1136220934 #Infuse
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
+rm ~/.composer/config.json
+ln -sf ~/.dotfiles/.composer/config.json ~/.composer/config.json
+rm ~/.composer/composer.json
+ln -sf ~/.dotfiles/.composer/composer.json ~/.composer/composer.json
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
