@@ -101,6 +101,9 @@ mas install 409203825 #Numbers
 mas install 1289583905 #Pixelmator Pro
 mas install 1136220934 #Infuse
 
+# Configure Tower to use PHP in git hooks: https://www.git-tower.com/help/guides/integration/environment/mac
+cp ~/.dotfiles/environment.plist ~/Library/Application\ Support/com.fournova.Tower3/
+
 # Install Composer
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
