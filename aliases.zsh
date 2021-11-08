@@ -25,6 +25,7 @@ alias reset="git reset"
 alias clone="git clone"
 alias init="git init && git add . && git commit -m 'Initial commit'"
 alias discard="git clean -df && git reset --hard"
+alias pls="php please"
 
 # Other
 alias start='code . && git pull && php artisan cache:clear && npm run watch'
