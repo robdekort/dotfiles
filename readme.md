@@ -14,4 +14,5 @@ Feel free to copy parts of this for your own dotfiles!
 6. Login to all the things
 7. Restore SSH key from 1Password
 8. Authenticate Composer with GitHub: `composer config --global github-oauth.github.com token`
+9. Install [Fira Code Font](https://github.com/tonsky/FiraCode)
 9. Restart Mac

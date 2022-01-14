@@ -11,9 +11,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Configure symlinks
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-rm ~/.ssh/config
+rm -f ~/.ssh/config
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
-rm ~/.gitconfig
+rm -f ~/.gitconfig
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Homebrew - Installation
@@ -58,7 +58,6 @@ homebrew_cask_packages=(
   "discord"
   "codekit"
   "figma"
-  "font-fira-code"
   "firefox"
   "google-chrome"
   "handbrake"
@@ -67,7 +66,6 @@ homebrew_cask_packages=(
   "microsoft-edge"
   "opera"
   "poedit"
-  "phpmon"
   "redis"
   "screenflow"
   "sequel-ace"
@@ -75,7 +73,7 @@ homebrew_cask_packages=(
   "sketch"
   "telegram"
   "transmit"
-  "toggl"
+  "toggl-track"
   "tower"
   "transmission"
   "visual-studio-code"
@@ -107,6 +105,8 @@ cp ~/.dotfiles/environment.plist ~/Library/Application\ Support/com.fournova.Tow
 # Install Composer
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
+
+mkdir --parents /usr/local/bin/composer
 mv composer.phar /usr/local/bin/composer
 rm ~/.composer/config.json
 ln -sf ~/.dotfiles/.composer/config.json ~/.composer/config.json
