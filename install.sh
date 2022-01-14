@@ -92,7 +92,7 @@ mas install 409183694 #Keynote
 mas install 1173932628 #Drop
 mas install 1254981365 #Contrast
 mas install 904280696 #Things
-mas install 1107421413 #1Blocker
+mas install 1365531024 #1Blocker
 mas install 409201541 #Pages
 mas install 1529448980 #Reeder
 mas install 409203825 #Numbers
