@@ -51,6 +51,8 @@ echo "Installing Homebrew cask packages"
 
 # Add cask for PHP mon
 brew tap homebrew/homebrew-cask
+brew tap nicoverbruggen/homebrew-cask
+brew install --cask phpmon
 
 homebrew_cask_packages=(
   "1password"
