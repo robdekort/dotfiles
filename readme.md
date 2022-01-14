@@ -13,5 +13,5 @@ Feel free to copy parts of this for your own dotfiles!
 5. Run `sh macos.sh` for sane MacOS defaults
 6. Login to all the things
 7. Restore SSH key from 1Password
-8. Authenticate Composer with GitHub: `composer config [--global] github-oauth.github.com token`
+8. Authenticate Composer with GitHub: `composer config --global github-oauth.github.com token`
 9. Restart Mac
