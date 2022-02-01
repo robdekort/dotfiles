@@ -11,6 +11,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Configure symlinks
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+mkdir ~/.ssh
 rm -f ~/.ssh/config
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
 rm -f ~/.gitconfig
@@ -18,10 +19,11 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Homebrew - Installation
 echo "Installing Homebrew"
-
 if test ! $(which brew); then
  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/robdekort/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Update homebrew recipes
 brew update
