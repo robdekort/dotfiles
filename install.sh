@@ -110,7 +110,7 @@ cp ~/.dotfiles/environment.plist ~/Library/Application\ Support/com.fournova.Tow
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
 
-mkdir --parents /usr/local/bin/composer
+mkdir -p /usr/local/bin/composer
 mv composer.phar /usr/local/bin/composer
 rm ~/.composer/config.json
 ln -sf ~/.dotfiles/.composer/config.json ~/.composer/config.json
@@ -119,7 +119,7 @@ ln -sf ~/.dotfiles/.composer/composer.json ~/.composer/composer.json
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
-/usr/local/bin/composer global require laravel/installer laravel/valet statamic/cli schmidfelix/ploi-cli
+composer global require laravel/installer laravel/valet statamic/cli schmidfelix/ploi-cli
 
 # Install Laravel Valet
 echo "Installing Laravel Valet"
