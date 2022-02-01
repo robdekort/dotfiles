@@ -157,7 +157,7 @@ npm install -g npm-check-updates
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
 
 # Hide 'Last Logged In' in terminal
-touch .hushlogin
+touch ~/.hushlogin
 
 # Complete
 echo "Installation Complete"
