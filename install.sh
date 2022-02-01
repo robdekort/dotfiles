@@ -10,9 +10,9 @@ echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Configure symlinks
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+rm ~/.zshrc
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 mkdir ~/.ssh
-rm -f ~/.ssh/config
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
 rm -f ~/.gitconfig
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -22,7 +22,7 @@ echo "Installing Homebrew"
 if test ! $(which brew); then
  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/robdekort/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Update homebrew recipes
@@ -109,7 +109,6 @@ cp ~/.dotfiles/environment.plist ~/Library/Application\ Support/com.fournova.Tow
 # Install Composer
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
-
 mkdir -p /usr/local/bin/composer
 mv composer.phar /usr/local/bin/composer
 rm ~/.composer/config.json
