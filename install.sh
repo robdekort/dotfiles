@@ -151,6 +151,7 @@ valet restart
 echo "Installing Global Node Dependecies"
 npm install -g cross-env
 npm install -g npm-check-updates
+npm install puppeteer --global
 
 # Register the Global Gitignore file
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
