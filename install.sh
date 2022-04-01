@@ -65,6 +65,7 @@ homebrew_cask_packages=(
   "firefox"
   "google-chrome"
   "handbrake"
+  "imageoptim"
   "iterm2"
   "macmediakeyforwarder"
   "microsoft-edge"
@@ -155,6 +156,9 @@ npm install puppeteer --global
 
 # Register the Global Gitignore file
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
+
+# Set nano as default editor.
+git config --global core.editor "nano"
 
 # Hide 'Last Logged In' in terminal
 touch ~/.hushlogin
