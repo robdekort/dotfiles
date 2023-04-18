@@ -2,7 +2,7 @@
 	name = Rob de Kort
 	email = rob@studio1902.nl
 [core]
-	excludesfile = ~/.dotfiles/.gitignore_global
+	excludesFile = ~/.dotfiles/.gitignore_global
 	editor = nano
 [init]
 	defaultBranch = main
