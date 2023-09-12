@@ -31,3 +31,4 @@ alias pls="php please"
 alias start='code . && git pull && php artisan cache:clear && npm run watch'
 alias ccp='cd vendor/statamic/cms && npm i && npm run build && .... && php please install'
 alias fc='rm composer.lock && rm -r vendor && composer install'
+alias compilecp='cd vendor/statamic/cms && npm i && npm run build && cd .... && pls install'
