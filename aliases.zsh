@@ -28,7 +28,7 @@ alias discard="git clean -df && git reset --hard"
 alias pls="php please"
 
 # Other
-alias start='code . && git pull && php artisan cache:clear && npm run watch'
+alias start='code . && php artisan cache:clear && npm run watch'
 alias ccp='cd vendor/statamic/cms && npm i && npm run build && .... && php please install'
 alias fc='rm composer.lock && rm -r vendor && composer install'
-alias compilecp='cd vendor/statamic/cms && npm i && npm run build && cd .... && pls install'
+alias export='pls starter-kit:export ../statamic-peak'

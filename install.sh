@@ -33,7 +33,6 @@ cd ~
 echo "Installing Homebrew packages"
 
 homebrew_packages=(
- "imagemagick"
  "gh"
  "mysql"
  "php"
@@ -51,32 +50,18 @@ done
 # Install Casks
 echo "Installing Homebrew cask packages"
 
-# Add cask for PHP mon
-brew tap homebrew/homebrew-cask
-brew tap nicoverbruggen/homebrew-cask
-brew install --cask phpmon
-
 homebrew_cask_packages=(
-  "1password"
   "appcleaner"
   "discord"
   "codekit"
-  "figma"
   "firefox"
-  "google-chrome"
   "handbrake"
-  "imageoptim"
   "iterm2"
-  "macmediakeyforwarder"
   "microsoft-edge"
-  "opera"
   "poedit"
-  "redis"
-  "screenflow"
   "sequel-ace"
   "signal"
   "sketch"
-  "telegram"
   "transmit"
   "toggl-track"
   "tower"
@@ -90,11 +75,9 @@ done
 
 # Install MAS apps
 echo "Installing App Store apps"
-mas install 775737590 #IAWriter
+# Add affinity, color drop picker
 mas install 905953485 #NordVPN
-mas install 824171161 #Affinity Designer
 mas install 409183694 #Keynote
-mas install 1173932628 #Drop
 mas install 1254981365 #Contrast
 mas install 904280696 #Things
 mas install 1365531024 #1Blocker
@@ -119,7 +102,7 @@ ln -sf ~/.dotfiles/.composer/composer.json ~/.composer/composer.json
 
 # Install Global Composer Packages
 echo "Installing Global Composer Packages"
-composer global require laravel/installer laravel/valet statamic/cli schmidfelix/ploi-cli
+composer global require laravel/installer statamic/cli
 
 # Install Laravel Valet
 echo "Installing Laravel Valet"
@@ -130,29 +113,14 @@ valet trust
 echo "Creating a Sites directory"
 mkdir $HOME/Sites
 
-# Start MySQL for the first time
-echo "Starting MySQL for the first time"
-brew services start mysql
-
-# Start Mailhog for the first time
+# Start Mailpit for the first time
 echo "Starting Mailpit for the first time"
 brew services start mailpit
-
-# Configure Laravel Valet
-cd ~/Sites
-valet park && cd ~
-echo "Configuring Laravel Valet"
-cd ~
-valet proxy mailpit http://0.0.0.0:8025
-pecl install imagick
-pecl install redis
-valet restart
 
 # Installing Global Node Dependecies
 echo "Installing Global Node Dependecies"
 npm install -g cross-env
 npm install -g npm-check-updates
-npm install puppeteer --global
 
 # Register the Global Gitignore file
 git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
