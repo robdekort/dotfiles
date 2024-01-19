@@ -25,10 +25,10 @@ alias reset="git reset"
 alias clone="git clone"
 alias init="git init && git add . && git commit -m 'Initial commit'"
 alias discard="git clean -df && git reset --hard"
-alias pls="php please"
 
 # Other
-alias start='code . && php artisan cache:clear && npm run watch'
-alias ccp='cd vendor/statamic/cms && npm i && npm run build && .... && php please install'
-alias fc='rm composer.lock && rm -r vendor && composer install'
-alias export='pls starter-kit:export ../statamic-peak'
+alias pls="php please"
+alias start="code . && php artisan cache:clear && npm run watch"
+alias ccp="cd vendor/statamic/cms && npm i && npm run build && .... && php please install"
+alias fc="rm composer.lock && rm -r vendor && composer install"
+alias exportpeak="php please starter-kit:export ../statamic-peak"

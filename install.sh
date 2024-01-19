@@ -16,6 +16,8 @@ mkdir ~/.ssh
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
 rm -f ~/.gitconfig
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+rm -f ~/.p10k.zsh
+ln -s ~/.dotfiles/.p10k.zsh  ~/.p10k.zsh
 
 # Homebrew - Installation
 echo "Installing Homebrew"
