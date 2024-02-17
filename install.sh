@@ -36,13 +36,10 @@ echo "Installing Homebrew packages"
 
 homebrew_packages=(
  "gh"
- "mysql"
- "php"
  "node"
  "mailpit"
  "mas"
  "pkg-config"
- "wp-cli"
 )
 
 for homebrew_package in "${homebrew_packages[@]}"; do
@@ -54,6 +51,7 @@ echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
   "appcleaner"
+  "dbngin"
   "discord"
   "codekit"
   "firefox"
