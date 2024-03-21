@@ -36,8 +36,8 @@ echo "Installing Homebrew packages"
 
 homebrew_packages=(
  "gh"
+ "mysql-client"
  "node"
- "mailpit"
  "mas"
  "pkg-config"
 )
@@ -51,11 +51,11 @@ echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
   "appcleaner"
-  "dbngin"
   "discord"
   "codekit"
   "firefox"
   "handbrake"
+  "herd",
   "iterm2"
   "microsoft-edge"
   "poedit"
@@ -112,10 +112,6 @@ valet trust
 # Create Sites directory
 echo "Creating a Sites directory"
 mkdir $HOME/Sites
-
-# Start Mailpit for the first time
-echo "Starting Mailpit for the first time"
-brew services start mailpit
 
 # Installing Global Node Dependecies
 echo "Installing Global Node Dependecies"
